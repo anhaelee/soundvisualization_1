@@ -30,7 +30,7 @@
 	
  	var scene = new THREE.Scene();
 	var camera = new THREE.PerspectiveCamera( 75,window.innerWidth / window.innerHeight, 1, 100000 );
-    camera.position.set( 1500, 500, 600 );
+    camera.position.set( 670, 700, 100 );
     camera.lookAt( new THREE.Vector3( 0, 1, 0 ) );
 
 
@@ -51,10 +51,6 @@
 
 
     control = new THREE.TransformControls (camera, renderer.domElement);
-
-
-
-	
 
 
 	
@@ -79,10 +75,7 @@
  // create the shape
     var geometry = new THREE.BoxGeometry( 200, 200, 200 );
     
-
-
-	
-
+		
 
 
     //box material
@@ -96,8 +89,6 @@
 		new THREE.MeshBasicMaterial({color:0x322577, side:THREE.DoubleSide})
 	];
 
-   
-
 
     //create a material, colour or image texture
 	var Cube = new THREE.Mesh( geometry, cubeMaterials);
@@ -106,11 +97,10 @@
 	scene.add( control );
 
     
-
-
+		
     camera.position.z = 5;
 	
-  
+		
 
 	//scene.add (ambientLight);
     var ambientLight = new THREE.AmbientLight (0xFFFFFF,0.8);
